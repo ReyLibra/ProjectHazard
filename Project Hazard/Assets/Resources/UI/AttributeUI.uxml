@@ -1,0 +1,111 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="BG" style="width: 100%; height: 100%; align-items: center; justify-content: space-around;">
+        <ui:VisualElement name="MainBG" style="background-image: resource(&apos;Sprites/Attribute-Background&apos;); width: 75%; height: 90%;">
+            <ui:VisualElement name="TopRow" style="width: 100%; height: 15%; flex-direction: row; align-items: center; justify-content: center;">
+                <ui:VisualElement name="CalTerm" style="width: 65%; height: 100%; align-items: center; justify-content: space-around;">
+                    <ui:Label text="Calibration Terminal" display-tooltip-when-elided="true" name="CalTermLabel" style="font-size: 60px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 2px; -unity-font-style: bold; color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="AttPnts" style="width: 35%; height: 100%; flex-direction: row; align-items: center; justify-content: center;">
+                    <ui:Label text="Attribute Points:" display-tooltip-when-elided="true" name="AttPntsLabel" style="font-size: 20px; -unity-font-style: bold; color: rgb(255, 255, 255);" />
+                    <ui:Label text="0" display-tooltip-when-elided="true" name="AttPntsNum" style="font-size: 20px; -unity-font-style: bold; color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="BottomRow" style="width: 100%; height: 80%; flex-direction: row; align-items: center;">
+                <ui:VisualElement name="Points" style="width: 65%; height: 100%; padding-left: 5%;">
+                    <ui:VisualElement name="TotalAttack" style="width: 100%; height: 10%; flex-direction: row; align-items: center; justify-content: flex-start;">
+                        <ui:Label text="Total Attack:" display-tooltip-when-elided="true" name="TotalAttackLabel" style="font-size: 30px; -unity-text-align: middle-center; color: rgb(255, 255, 255);" />
+                        <ui:Label text="0" display-tooltip-when-elided="true" name="TotalAttackNum" style="font-size: 30px; -unity-text-align: middle-center; color: rgb(255, 255, 255);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ATKBonus" style="width: 100%; height: 10%; flex-direction: row; align-items: center; justify-content: flex-start;">
+                        <ui:VisualElement name="Left" style="flex-direction: row; align-items: center; width: 50%; height: 100%;">
+                            <ui:Label text="ATK Bonus:" display-tooltip-when-elided="true" name="ATKBonusLabel" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                            <ui:Label text="0" display-tooltip-when-elided="true" name="ATKBonusNum" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Right" style="width: 50%; height: 100%; flex-direction: row; align-items: center; justify-content: space-around;">
+                            <ui:Label text="+" display-tooltip-when-elided="true" name="ATKAdd" style="width: 10%; height: 50%; -unity-text-align: middle-center; font-size: 30px; -unity-font-style: bold; color: rgb(255, 255, 255); background-color: rgb(16, 97, 115); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px;" />
+                            <ui:Label text="-" display-tooltip-when-elided="true" name="ATKMinus" style="width: 10%; height: 50%; -unity-text-align: middle-center; font-size: 30px; -unity-font-style: bold; color: rgb(255, 255, 255); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); background-color: rgb(16, 97, 115);" />
+                            <ui:Label display-tooltip-when-elided="true" name="ATKPrcnt" style="height: 100%; -unity-text-align: middle-center; font-size: 30px; color: rgb(28, 175, 34);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Health" style="width: 100%; height: 10%; flex-direction: row; align-items: center; justify-content: flex-start;">
+                        <ui:Label text="Health:" display-tooltip-when-elided="true" name="HealthLabel" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                        <ui:Label text="0" display-tooltip-when-elided="true" name="HealthNum" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="HPBonus" style="width: 100%; height: 10%; flex-direction: row; align-items: center; justify-content: space-between;">
+                        <ui:VisualElement name="Left" style="width: 50%; height: 100%; flex-direction: row; align-items: center;">
+                            <ui:Label text="HP Bonus:" display-tooltip-when-elided="true" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                            <ui:Label text="0" display-tooltip-when-elided="true" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Right" style="width: 50%; height: 100%; flex-direction: row; align-items: center; justify-content: space-around;">
+                            <ui:Label text="+" display-tooltip-when-elided="true" name="HPBonusAdd" style="font-size: 30px; color: rgb(255, 255, 255); width: 10%; height: 50%; -unity-text-align: middle-center; background-color: rgb(16, 97, 115); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%;" />
+                            <ui:Label text="-" display-tooltip-when-elided="true" name="HPBonusMinus" style="color: rgb(255, 255, 255); font-size: 30px; width: 10%; height: 50%; -unity-text-align: middle-center; background-color: rgb(16, 97, 115); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px;" />
+                            <ui:Label display-tooltip-when-elided="true" name="HPBonusPrcnt" style="font-size: 30px; color: rgb(28, 175, 34);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Speed" style="width: 100%; height: 10%; flex-direction: row; align-items: center;">
+                        <ui:VisualElement name="Left" style="width: 50%; height: 100%; flex-direction: row; align-items: center; justify-content: flex-start;">
+                            <ui:Label text="Speed:" display-tooltip-when-elided="true" name="SpeedLabel" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                            <ui:Label text="0" display-tooltip-when-elided="true" name="SpeedNum" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Right" style="width: 50%; height: 100%; flex-direction: row; align-items: center; justify-content: space-around;">
+                            <ui:Label text="+" display-tooltip-when-elided="true" name="SpeedAdd" style="font-size: 30px; color: rgb(255, 255, 255); width: 10%; height: 50%; -unity-text-align: middle-center; background-color: rgb(16, 97, 115); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%;" />
+                            <ui:Label text="-" display-tooltip-when-elided="true" name="SpeedMinus" style="color: rgb(255, 255, 255); font-size: 30px; width: 10%; height: 50%; -unity-text-align: middle-center; background-color: rgb(16, 97, 115); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px;" />
+                            <ui:Label display-tooltip-when-elided="true" name="SpeedPrcnt" style="font-size: 30px; color: rgb(28, 175, 34);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="CriticalRate" style="width: 100%; height: 10%; flex-direction: row; align-items: center;">
+                        <ui:VisualElement name="Left" style="width: 50%; height: 100%; flex-direction: row; align-items: center; justify-content: flex-start;">
+                            <ui:Label text="Critical Rate:" display-tooltip-when-elided="true" name="CriticalRateLabel" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                            <ui:Label text="0" display-tooltip-when-elided="true" name="CriticalRateNum" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Right" style="width: 50%; height: 100%; flex-direction: row; align-items: center; justify-content: space-around;">
+                            <ui:Label text="+" display-tooltip-when-elided="true" name="CriticalRateAdd" style="font-size: 30px; color: rgb(255, 255, 255); width: 10%; height: 50%; -unity-text-align: middle-center; background-color: rgb(16, 97, 115); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%;" />
+                            <ui:Label text="-" display-tooltip-when-elided="true" name="CriticalRateMinus" style="color: rgb(255, 255, 255); font-size: 30px; width: 10%; height: 50%; -unity-text-align: middle-center; background-color: rgb(16, 97, 115); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px;" />
+                            <ui:Label display-tooltip-when-elided="true" name="CriticalRatePrcnt" style="font-size: 30px; color: rgb(28, 175, 34);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="CDReduction" style="width: 100%; height: 10%; flex-direction: row; align-items: center;">
+                        <ui:VisualElement name="Left" style="width: 50%; height: 100%; flex-direction: row; align-items: center; justify-content: flex-start;">
+                            <ui:Label text="CD Reduction: " display-tooltip-when-elided="true" name="CDReductionLabel" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                            <ui:Label text="0" display-tooltip-when-elided="true" name="CDReductionNum" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Right" style="width: 50%; height: 100%; flex-direction: row; align-items: center; justify-content: space-around;">
+                            <ui:Label text="+" display-tooltip-when-elided="true" name="CDReductionAdd" style="font-size: 30px; color: rgb(255, 255, 255); width: 10%; height: 50%; -unity-text-align: middle-center; background-color: rgb(16, 97, 115); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%;" />
+                            <ui:Label text="-" display-tooltip-when-elided="true" name="CDReductionMinus" style="color: rgb(255, 255, 255); font-size: 30px; width: 10%; height: 50%; -unity-text-align: middle-center; background-color: rgb(16, 97, 115); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px;" />
+                            <ui:Label display-tooltip-when-elided="true" name="CDReductionPrcnt" style="font-size: 30px; color: rgb(28, 175, 34);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ResetButton" style="height: 30%; align-items: center; justify-content: flex-end; padding-bottom: 5%;">
+                        <ui:Label text="Reset" display-tooltip-when-elided="true" style="font-size: 30px; color: rgb(255, 255, 255); width: 50%; height: 50%; -unity-text-align: middle-center; background-color: rgba(255, 0, 0, 0.29); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Summary" style="width: 35%; height: 100%; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; align-items: center; justify-content: flex-start;">
+                    <ui:VisualElement name="SummaryBG" style="background-image: resource(&apos;Sprites/Attribute-SMRY&apos;); width: 85%; height: 80%;">
+                        <ui:VisualElement name="SummaryTitle" style="width: 100%; height: 20%; flex-direction: row; align-items: center; justify-content: space-around;">
+                            <ui:Label text="Summary" display-tooltip-when-elided="true" name="SummaryLabel" style="font-size: 40px; -unity-font-style: bold; color: rgb(255, 255, 255);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Weapons" style="width: 100%; height: 40%;">
+                            <ui:VisualElement name="WeaponsTitle" style="width: 100%; height: 30%; align-items: center; justify-content: space-around;">
+                                <ui:Label text="Weapons" display-tooltip-when-elided="true" name="WeaponsLabel" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="WeaponsVisual" style="width: 100%; height: 70%; flex-direction: row;">
+                                <ui:VisualElement name="Weapon1" style="width: 50%; height: 100%; align-items: center; justify-content: space-around;" />
+                                <ui:VisualElement name="Weapon2" style="width: 50%; height: 100%; align-items: center; justify-content: space-around;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Utilities" style="width: 100%; height: 40%;">
+                            <ui:VisualElement name="UtilitiesTitle" style="width: 100%; height: 30%; align-items: center; justify-content: space-around;">
+                                <ui:Label text="Utilities" display-tooltip-when-elided="true" name="UtilitiesLabel" style="color: rgb(255, 255, 255); font-size: 30px;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="UtilitiesVisual" style="width: 100%; height: 70%; flex-direction: row; align-items: center; justify-content: space-around;">
+                                <ui:VisualElement name="Utilities1" style="width: 50%; height: 100%; align-items: center; justify-content: space-around;" />
+                                <ui:VisualElement name="Utilities2" style="width: 50%; height: 100%; align-items: center; justify-content: space-around;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Label text="Confirm" display-tooltip-when-elided="true" name="ConfirmButton" style="width: 50%; height: 10%; -unity-text-align: middle-center; font-size: 30px; -unity-font-style: bold; background-color: rgba(0, 225, 10, 0.29); margin-left: 5%; margin-right: 5%; margin-top: 5%; margin-bottom: 5%; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

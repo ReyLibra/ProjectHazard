@@ -1,0 +1,79 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="uibuttonshover.uss" />
+    <ui:VisualElement name="BG" style="font-size: 12px; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.29); align-items: center; justify-content: space-around; display: flex;">
+        <ui:VisualElement name="OptionsBG" style="width: 40%; height: 50%; background-color: rgba(0, 0, 0, 0.47); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); display: none;">
+            <ui:VisualElement name="TopRow" style="width: 100%; height: 25%; align-items: center; justify-content: space-around;">
+                <ui:Label text="Options" display-tooltip-when-elided="true" name="OptionsLabel" style="font-size: 60px; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Music" style="width: 100%; height: 25%;">
+                <ui:VisualElement name="MusicTitle" style="width: 100%; height: 30%; align-items: center; justify-content: space-around;">
+                    <ui:Label text="Music" display-tooltip-when-elided="true" name="MusicLabel" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="MusicOptions" style="width: 100%; height: 75%; flex-direction: row; align-items: center; justify-content: space-around;">
+                    <ui:Label text="-" display-tooltip-when-elided="true" name="MusicMinusButton" style="font-size: 30px; color: rgb(0, 0, 0); width: 5%; height: 40%; -unity-text-align: middle-center; background-color: rgb(255, 255, 255); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%;" />
+                    <ui:Slider picking-mode="Ignore" value="42" high-value="100" name="MusicSlider" style="width: 60%;" />
+                    <ui:Label text="+" display-tooltip-when-elided="true" name="MusicPlusButton" style="font-size: 30px; color: rgb(0, 0, 0); width: 5%; -unity-text-align: middle-center; height: 40%; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; background-color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Effects" style="width: 100%; height: 25%;">
+                <ui:VisualElement name="EffectsTitle" style="width: 100%; height: 30%; align-items: center; justify-content: space-around;">
+                    <ui:Label text="Sound Effects" display-tooltip-when-elided="true" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="EffectsOptions" style="width: 100%; height: 70%; align-items: center; justify-content: space-around; flex-direction: row;">
+                    <ui:Label text="-" display-tooltip-when-elided="true" name="EffectsMinusButton" style="width: 5%; height: 40%; -unity-text-align: middle-center; font-size: 30px; color: rgb(0, 0, 0); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; background-color: rgb(248, 248, 248);" />
+                    <ui:Slider picking-mode="Ignore" value="42" high-value="100" name="EffectsSlider" style="width: 60%;" />
+                    <ui:Label text="+" display-tooltip-when-elided="true" name="EffectsPlusButton" style="font-size: 30px; color: rgb(0, 0, 0); width: 5%; height: 40%; -unity-text-align: middle-center; background-color: rgb(255, 255, 255); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Buttons" style="width: 100%; height: 25%; flex-direction: row; align-items: center; justify-content: space-around;">
+                <ui:Label text="Back" display-tooltip-when-elided="true" name="OptionsBack" class="orngBlueHover" style="background-color: rgba(245, 136, 67, 0.59); width: 35%; height: 50%; font-size: 40px; -unity-font-style: normal; -unity-text-align: middle-center; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; color: rgb(255, 255, 255);" />
+                <ui:Label text="Confirm" display-tooltip-when-elided="true" name="OptionsConfirm" class="orngBlueHover" style="background-color: rgba(67, 195, 234, 0.59); width: 35%; height: 50%; font-size: 40px; -unity-text-align: middle-center; -unity-font-style: normal; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="PauseButtons" style="width: 40%; height: 50%; background-color: rgba(0, 0, 0, 0.47); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); align-items: center; display: flex;">
+            <ui:VisualElement name="TopRow" style="width: 100%; height: 30%; border-top-left-radius: 10%; border-top-right-radius: 10%; align-items: center; justify-content: space-around;">
+                <ui:Label text="Stage 0" display-tooltip-when-elided="true" name="StageTitleLabel" style="font-size: 50px; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="BottomRow" style="width: 100%; height: 60%; border-bottom-left-radius: 10%; border-bottom-right-radius: 10%; align-items: center; justify-content: space-around;">
+                <ui:VisualElement name="ResumeBG" style="width: 100%; height: 33%; align-items: center; justify-content: space-around;">
+                    <ui:Label text="Resume" display-tooltip-when-elided="true" name="ResumeLabel" class="buttonsHover" style="font-size: 30px; -unity-text-align: middle-center; width: 100%; color: rgb(255, 255, 255); height: 100%;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ControlsBtn" style="width: 100%; height: 33%; align-items: center; justify-content: space-around;">
+                    <ui:Label text="Controls" display-tooltip-when-elided="true" name="ControlsLabel" class="buttonsHover" style="font-size: 30px; -unity-text-align: middle-center; width: 100%; color: rgb(255, 255, 255); height: 100%;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="OptionsBtn" style="width: 100%; height: 33%; align-items: center; justify-content: space-around; display: none;">
+                    <ui:Label text="Options" display-tooltip-when-elided="true" name="OptionsLabel" class="buttonsHover" style="font-size: 30px; -unity-text-align: middle-center; width: 100%; color: rgb(255, 255, 255); height: 100%;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="QuitBtn" style="width: 100%; height: 33%; border-bottom-left-radius: 10%; border-bottom-right-radius: 10%; align-items: center; justify-content: space-around;">
+                    <ui:Label text="Quit" display-tooltip-when-elided="true" name="QuitLabel" class="buttonsHover" style="font-size: 30px; -unity-text-align: middle-center; width: 100%; color: rgb(255, 255, 255); height: 100%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ControlBG" style="width: 60%; height: 75%; background-color: rgba(0, 0, 0, 0.47); align-items: center; justify-content: space-around; display: none; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%;">
+            <ui:VisualElement name="Title" style="width: 100%; height: 25%; align-items: center; justify-content: space-around;">
+                <ui:Label text="Controls" display-tooltip-when-elided="true" name="ControlsLabel" style="-unity-font-style: normal; font-size: 60px; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Image" style="width: 100%; height: 40%; flex-direction: row; align-items: center; justify-content: space-around;">
+                <ui:VisualElement name="Keyboard" style="width: 50%; height: 100%; align-items: center; justify-content: space-around;">
+                    <ui:VisualElement style="background-image: resource(&apos;Sprites/KeyboardControl&apos;); width: 90%; height: 80%;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Mouse" style="width: 50%; height: 100%; align-items: center; justify-content: space-around;">
+                    <ui:VisualElement style="background-image: resource(&apos;Sprites/MouseControl&apos;); width: 80%; height: 100%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ControlBack" style="width: 100%; height: 25%; align-items: center; justify-content: space-around;">
+                <ui:Label text="Back" display-tooltip-when-elided="true" name="CtrlBack" class="orngBlueHover" style="font-size: 30px; color: rgb(255, 255, 255); width: 25%; -unity-text-align: middle-center; height: 40%; background-color: rgba(245, 136, 67, 0.59); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="QuitWarning" style="width: 40%; height: 50%; background-color: rgba(0, 0, 0, 0.47); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); align-items: center; display: none;">
+            <ui:VisualElement name="TopRow" style="width: 100%; height: 60%; border-top-left-radius: 10%; border-top-right-radius: 10%; align-items: center; justify-content: space-around; padding-left: 10%; padding-right: 10%; padding-top: 10%; padding-bottom: 10%;">
+                <ui:Label text="Are you sure you want to quit?" display-tooltip-when-elided="true" name="Confirm" style="font-size: 40px; -unity-font-style: bold; color: rgb(255, 255, 255);" />
+                <ui:Label text="Your progress will not be saved and you will be directed to the Main Menu" display-tooltip-when-elided="true" name="Warning" style="color: rgb(255, 0, 0); font-size: 18px; width: 60%; white-space: normal; -unity-text-align: upper-center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="BottomRow" style="width: 100%; height: 40%; border-bottom-left-radius: 10%; border-bottom-right-radius: 10%; align-items: center; justify-content: space-around; flex-direction: row;">
+                <ui:Label text="Back" display-tooltip-when-elided="true" name="QuitBack" class="orngBlueHover" style="font-size: 40px; width: 25%; height: 25%; -unity-text-align: middle-center; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); background-color: rgba(245, 136, 67, 0.59);" />
+                <ui:Label text="Quit" display-tooltip-when-elided="true" name="QuittoMain" class="orngBlueHover" style="font-size: 40px; width: 25%; height: 25%; -unity-text-align: middle-center; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); background-color: rgba(67, 195, 234, 0.59);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

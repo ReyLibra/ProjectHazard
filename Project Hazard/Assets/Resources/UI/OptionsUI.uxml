@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="BG" style="background-color: rgba(0, 0, 0, 0.29); width: 100%; height: 100%; align-items: center; justify-content: space-around;">
+        <ui:VisualElement name="OptionsBG" style="width: 40%; height: 50%; background-color: rgba(0, 0, 0, 0.47); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);">
+            <ui:VisualElement name="TopRow" style="width: 100%; height: 25%; align-items: center; justify-content: space-around;">
+                <ui:Label text="Options" display-tooltip-when-elided="true" name="OptionsLabel" style="font-size: 60px; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Music" style="width: 100%; height: 25%;">
+                <ui:VisualElement name="MusicTitle" style="width: 100%; height: 30%; align-items: center; justify-content: space-around;">
+                    <ui:Label text="Music" display-tooltip-when-elided="true" name="MusicLabel" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="MusicOptions" style="width: 100%; height: 75%; flex-direction: row; align-items: center; justify-content: space-around;">
+                    <ui:Label text="-" display-tooltip-when-elided="true" name="MusicMinusButton" style="font-size: 30px; color: rgb(0, 0, 0); width: 5%; height: 40%; -unity-text-align: middle-center; background-color: rgb(255, 255, 255); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%;" />
+                    <ui:Slider picking-mode="Ignore" value="42" high-value="100" name="MusicSlider" style="width: 60%;" />
+                    <ui:Label text="+" display-tooltip-when-elided="true" name="MusicPlusButton" style="font-size: 30px; color: rgb(0, 0, 0); width: 5%; -unity-text-align: middle-center; height: 40%; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; background-color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Effects" style="width: 100%; height: 25%;">
+                <ui:VisualElement name="EffectsTitle" style="width: 100%; height: 30%; align-items: center; justify-content: space-around;">
+                    <ui:Label text="Sound Effects" display-tooltip-when-elided="true" style="font-size: 30px; color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="EffectsOptions" style="width: 100%; height: 70%; align-items: center; justify-content: space-around; flex-direction: row;">
+                    <ui:Label text="-" display-tooltip-when-elided="true" name="EffectsMinusButton" style="width: 5%; height: 40%; -unity-text-align: middle-center; font-size: 30px; color: rgb(0, 0, 0); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; background-color: rgb(248, 248, 248);" />
+                    <ui:Slider picking-mode="Ignore" value="42" high-value="100" name="EffectsSlider" style="width: 60%;" />
+                    <ui:Label text="+" display-tooltip-when-elided="true" name="EffectsPlusButton" style="font-size: 30px; color: rgb(0, 0, 0); width: 5%; height: 40%; -unity-text-align: middle-center; background-color: rgb(255, 255, 255); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Buttons" style="width: 100%; height: 25%; flex-direction: row; align-items: center; justify-content: space-around;">
+                <ui:Label text="Back" display-tooltip-when-elided="true" style="background-color: rgba(196, 196, 196, 0.78); width: 35%; height: 50%; font-size: 50px; -unity-font-style: bold; -unity-text-align: middle-center; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+                <ui:Label text="Confirm" display-tooltip-when-elided="true" style="background-color: rgba(196, 196, 196, 0.78); width: 35%; height: 50%; font-size: 50px; -unity-text-align: middle-center; -unity-font-style: bold; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

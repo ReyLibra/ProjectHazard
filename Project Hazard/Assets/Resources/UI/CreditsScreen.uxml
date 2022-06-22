@@ -1,0 +1,49 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="CredBG" style="width: 100%; height: 100%; background-image: resource(&apos;Sprites/3P11_Environment_ConceptArt_4&apos;); -unity-background-image-tint-color: rgb(115, 115, 115); display: flex;">
+        <ui:VisualElement name="Top" style="width: 100%; height: 30%; align-items: center; justify-content: space-around;">
+            <ui:Label text="Project Hazard" display-tooltip-when-elided="true" name="PHTitle" style="font-size: 200px; -unity-font-style: bold; color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Bottom" style="width: 100%; height: 50%; flex-direction: row; align-items: center;">
+            <ui:VisualElement name="First" style="width: 50%; height: 100%; flex-direction: row; align-items: center;">
+                <ui:VisualElement name="Names" style="width: 60%; height: 100%; align-items: flex-end; justify-content: space-around;">
+                    <ui:Label text="Joshua Ducharme-Baribeau /" display-tooltip-when-elided="true" name="Josh" style="font-size: 35px; color: rgb(255, 255, 255);" />
+                    <ui:Label text=" Jem Generalao /" display-tooltip-when-elided="true" name="Jem" style="font-size: 35px; color: rgb(255, 255, 255);" />
+                    <ui:Label text="Reymar Libramonte /" display-tooltip-when-elided="true" name="Rey" style="font-size: 35px; color: rgb(255, 255, 255);" />
+                    <ui:Label text=" Trisha Ambekar /" display-tooltip-when-elided="true" name="Trisha" style="font-size: 35px; color: rgb(255, 255, 255);" />
+                    <ui:Label text="Ethan Bowbyes /" display-tooltip-when-elided="true" name="Ethan" style="font-size: 35px; color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Titles" style="width: 40%; height: 100%; align-items: flex-start; justify-content: space-around;">
+                    <ui:Label text="Producer" display-tooltip-when-elided="true" name="JD" style="font-size: 30px; color: rgb(255, 62, 0); -unity-font-style: bold;" />
+                    <ui:Label text="Lead Designer &amp; UI Programmer" display-tooltip-when-elided="true" name="JG" style="font-size: 30px; -unity-font-style: bold; color: rgb(255, 62, 0);" />
+                    <ui:Label text="Co-Lead Programmer" display-tooltip-when-elided="true" name="RL" style="font-size: 30px; -unity-font-style: bold; color: rgb(255, 62, 0);" />
+                    <ui:Label text="Co-Lead Artist" display-tooltip-when-elided="true" name="TA" style="font-size: 30px; -unity-font-style: bold; color: rgb(255, 62, 0);" />
+                    <ui:Label text="UI Designer" display-tooltip-when-elided="true" style="font-size: 30px; -unity-font-style: bold; color: rgb(255, 62, 0);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Second" style="width: 50%; height: 100%; flex-direction: row; align-items: center; justify-content: space-around;">
+                <ui:VisualElement name="Names" style="font-size: 40%; width: 60%; height: 100%; flex-direction: column; align-items: flex-end; justify-content: space-around;">
+                    <ui:Label text="Hashim Khan /" display-tooltip-when-elided="true" name="Hash" style="font-size: 35px; color: rgb(255, 255, 255);" />
+                    <ui:Label text="Devin Dempsey /" display-tooltip-when-elided="true" name="Devin" style="font-size: 35px; color: rgb(255, 255, 255);" />
+                    <ui:Label text="Zachary Heil /" display-tooltip-when-elided="true" name="Zach" style="font-size: 35px; color: rgb(255, 255, 255);" />
+                    <ui:Label text="Fariha Khan /" display-tooltip-when-elided="true" name="Fariha" style="font-size: 35px; color: rgb(255, 255, 255);" />
+                    <ui:Label text="Evan Sole /" display-tooltip-when-elided="true" name="Evan" style="font-size: 35px; color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Titles" style="width: 40%; height: 100%; align-items: flex-start; justify-content: space-around;">
+                    <ui:Label text="Lead Animator" display-tooltip-when-elided="true" style="font-size: 30px; -unity-font-style: bold; color: rgb(255, 62, 0);" />
+                    <ui:Label text="Lead Sound Artist" display-tooltip-when-elided="true" name="DD" style="font-size: 30px; -unity-font-style: bold; color: rgb(255, 62, 0);" />
+                    <ui:Label text="Co-Lead Programmer" display-tooltip-when-elided="true" style="font-size: 30px; -unity-font-style: bold; color: rgb(255, 62, 0);" />
+                    <ui:Label text="Co-Lead Artist" display-tooltip-when-elided="true" style="font-size: 30px; color: rgb(255, 62, 0); -unity-font-style: bold;" />
+                    <ui:Label text="Artist" display-tooltip-when-elided="true" style="font-size: 30px; -unity-font-style: bold; color: rgb(255, 62, 0);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label text="Special Thanks" display-tooltip-when-elided="true" style="font-size: 30px; color: rgb(255, 62, 0); -unity-text-align: middle-center; -unity-font-style: bold; height: 71px;" />
+        <ui:VisualElement name="Acknowledgements" style="width: 100%; height: 20%; align-items: stretch; justify-content: space-around; flex-direction: row;">
+            <ui:VisualElement style="width: 20%; height: 0;" />
+            <ui:Label text="Dr. Jason Hawreliak\nBetty Zhong" display-tooltip-when-elided="true" style="font-size: 30px; color: rgb(255, 255, 255); -unity-text-align: upper-center; -unity-font-style: normal; white-space: nowrap;" />
+            <ui:VisualElement style="width: 20%; height: 100%; flex-direction: column-reverse; align-items: flex-end; padding-bottom: 0; justify-content: space-around;">
+                <ui:Label text="Back" display-tooltip-when-elided="true" name="CredBack" style="font-size: 30px; width: 50%; height: 30%; -unity-text-align: middle-center; background-color: rgba(245, 136, 67, 0.59); color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

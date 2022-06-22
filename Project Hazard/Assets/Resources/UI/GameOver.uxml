@@ -1,0 +1,42 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="BG" style="background-color: rgba(0, 0, 0, 0.29); width: 100%; height: 100%; align-items: center; justify-content: space-around;">
+        <ui:VisualElement name="GameOverBG" style="border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; width: 40%; height: 50%; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.47);">
+            <ui:VisualElement name="TopRow" style="border-top-left-radius: 10%; border-top-right-radius: 10%; width: 100%; height: 25%; padding-left: 3%; padding-right: 3%; padding-top: 3%; padding-bottom: 3%;">
+                <ui:Label text="Game Over" display-tooltip-when-elided="true" name="GameOverLabel" style="-unity-text-align: middle-center; width: 100%; color: rgb(255, 255, 255); font-size: 60px; -unity-font-style: bold; height: 100%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="MiddleRow" style="width: 100%; height: 15%; flex-direction: row; align-items: center; justify-content: center;">
+                <ui:Label text="Time Elapsed:" display-tooltip-when-elided="true" name="TimeElapsedLabel" style="font-size: 30px; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="TwoMiddleRow" style="width: 100%; height: 45%; justify-content: space-between; align-items: center;">
+                <ui:VisualElement name="Title" style="width: 100%; height: 20%; flex-direction: row; align-items: center; justify-content: space-around;">
+                    <ui:Label text="Stats" display-tooltip-when-elided="true" name="StatsLabel" style="font-size: 24px; -unity-text-align: upper-center; color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Stats" style="width: 100%; height: 60%; flex-direction: row;">
+                    <ui:VisualElement name="Left" style="width: 50%; height: 100%;">
+                        <ui:VisualElement name="Attack" style="width: 100%; height: 71px; flex-direction: row; align-items: center; justify-content: center;">
+                            <ui:Label text="Attack:" display-tooltip-when-elided="true" name="AttackLabel" style="width: auto; font-size: 18px; color: rgb(255, 255, 255);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Speed" style="width: 100%; height: 50%; align-items: center; flex-direction: row; justify-content: center;">
+                            <ui:Label text="Speed: " display-tooltip-when-elided="true" name="SpeedLabel" style="font-size: 18px; color: rgb(255, 255, 255);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Right" style="width: 50%; height: 100%;">
+                        <ui:VisualElement name="Health" style="width: 100%; height: 50%; flex-direction: row; align-items: center; justify-content: center;">
+                            <ui:Label text="Health:" display-tooltip-when-elided="true" name="HealthLabel" style="font-size: 18px; color: rgb(255, 255, 255);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="CriticalRate" style="width: 100%; height: 50%; flex-direction: row; align-items: center; justify-content: center;">
+                            <ui:Label text="Critical Rate:" display-tooltip-when-elided="true" name="CriticalRateLabel" style="font-size: 18px; color: rgb(255, 255, 255);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Link" style="width: 100%; height: 20%; flex-direction: column; align-items: center; justify-content: space-around;">
+                    <ui:Label text="Upgrade your attributes" display-tooltip-when-elided="true" name="UpgradeLabel" style="-unity-text-align: middle-center; -unity-font-style: bold; width: 19%; border-bottom-width: 1px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="LastRow" style="width: 100%; height: 20%; flex-direction: row; align-items: center; justify-content: space-around;">
+                <ui:Label text="Exit" display-tooltip-when-elided="true" name="ExitButton" style="width: 30%; height: 50%; -unity-text-align: middle-center; font-size: 26px; -unity-font-style: bold; background-color: rgba(55, 55, 55, 0.39); border-top-left-radius: 20%; border-bottom-left-radius: 20%; border-top-right-radius: 20%; border-bottom-right-radius: 20%; color: rgb(255, 255, 255);" />
+                <ui:Label text="Retry" display-tooltip-when-elided="true" name="RetryButton" style="width: 30%; height: 50%; -unity-text-align: middle-center; font-size: 26px; -unity-font-style: bold; background-color: rgba(55, 55, 55, 0.39); border-top-left-radius: 20%; border-bottom-left-radius: 20%; border-top-right-radius: 20%; border-bottom-right-radius: 20%; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
